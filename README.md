@@ -201,7 +201,7 @@ child: Row(
 
 ## 7. [Alert Dialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
 
-[Alert Dialog](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/alert_dialog_widgets.dart)
+[Source Code Alert Dialog](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/alert_dialog_widgets.dart)
 
 * Use **Alert Dialog**:
 

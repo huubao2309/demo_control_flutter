@@ -100,4 +100,54 @@
         
 ![use Font](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/using_font.png)
         
+## 3. [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
+
+![Row_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/row.png)
+
+[Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/row_widgets.dart)
+
+```javascript
+child: Row(
+            children: <Widget>[
+              Text(
+                'Row 1',
+                style: TextStyle(color: Colors.red, fontSize: 40),
+              ),
+              Text(
+                'Row 2',
+                style: TextStyle(color: Colors.green, fontSize: 40),
+              ),
+            ],
+          )
+```
+
+![Result_Row_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/row_image.png)
+
+
+## 4. [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
+
+![Column_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/column.png)
+
+[Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/column_widgets.dart)
+
+
+```javascript
+          child: Column(
+            children: <Widget>[
+              Text(
+                'Column 1',
+                style: TextStyle(color: Colors.red, fontSize: 40),
+              ),
+              Text(
+                'Column 2',
+                style: TextStyle(color: Colors.green, fontSize: 40),
+              ),
+            ],
+          )
+```
+
+![Result_Column_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/column_image.png)
+
+
+
 

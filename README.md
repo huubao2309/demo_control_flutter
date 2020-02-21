@@ -175,6 +175,30 @@ child: Row(
 
 ![result load image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/load_image.png)
 
+## 6. Raised Button
+
+[Source Raised Button](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/raised_button_widgets.dart)
+
+* Use **Raised Button**:
+
+```javascript
+        child: RaisedButton(
+          onPressed: () {
+            print('Test Button');
+          },
+          child: Text(
+            'Click Button',
+            style: TextStyle(color: Colors.black),
+          ),
+          color: Colors.yellow,
+          elevation: 4.0,
+        ),
+```
+
+* Result use **Raised Button**:
+
+![Result Button](https://github.com/huubao2309/demo_control_flutter/blob/master/images/raised_button/result_button.png)
+
 
 
 

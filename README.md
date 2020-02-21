@@ -40,7 +40,7 @@
 
 * Use **Text Style**:
 
-```javascript
+```dart
         child: Text(
           'Container',
           textDirection: TextDirection.ltr,
@@ -68,7 +68,7 @@
         
 3. **Not Use Font**:
         
-```javascript
+```dart
         child: Text(
           'Not Use Font DancingScript',
           textDirection: TextDirection.ltr,
@@ -84,7 +84,7 @@
         
 4. **Use Font**:
         
-```javascript
+```dart
                child: Text(
                   'Not Use Font DancingScript',
                   textDirection: TextDirection.ltr,
@@ -106,7 +106,7 @@
 
 [Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/row_widgets.dart)
 
-```javascript
+```dart
 child: Row(
             children: <Widget>[
               Text(
@@ -131,7 +131,7 @@ child: Row(
 [Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/column_widgets.dart)
 
 
-```javascript
+```dart
           child: Column(
             children: <Widget>[
               Text(
@@ -161,7 +161,7 @@ child: Row(
 
 * Code for load Image:
 
-```javascript
+```dart
     return Container(
       child: Image(
         image: imageAsset,
@@ -181,7 +181,7 @@ child: Row(
 
 * Use **Raised Button**:
 
-```javascript
+```dart
         child: RaisedButton(
           onPressed: () {
             print('Test Button');
@@ -205,7 +205,7 @@ child: Row(
 
 * Use **Alert Dialog**:
 
-```javascript
+```dart
  void showAlertDialog(BuildContext context) {
     var alertDialog = AlertDialog(
       title: Text('Alert', style: TextStyle(color: Colors.red)),
@@ -235,6 +235,36 @@ child: Row(
 ![Alert Dialog 2](https://github.com/huubao2309/demo_control_flutter/blob/master/images/alert_dialog/image_dialog_2.png)
 
 
+## 8. [Text Field](https://api.flutter.dev/flutter/material/TextField-class.html)
+
+[Source Code Text Field](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_stateful_normal/textfield_widgets.dart)
+
+* Use **Text Field**:
+
+```dart
+          TextField(
+            decoration: InputDecoration(
+              hintText: 'Input Text...',
+              labelText: 'Name',
+              labelStyle: TextStyle(color: Colors.green),
+              hintStyle: TextStyle(color: Colors.red),
+              icon: Icon(
+                Icons.people,
+                color: Colors.blue,
+              ),
+            ),
+            onChanged: (String string) {
+              setState(() {
+                name = string;
+              });
+            },
+          ),
+```
+
+* Result use **Text Field**:
+
+![Text Field 1](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text_field/textfield_resul1.png)
+![Text Field 2](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text_field/textfield_resul2.png)
 
 
 

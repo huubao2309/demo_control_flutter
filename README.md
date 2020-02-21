@@ -274,11 +274,12 @@ child: Row(
 * Use **DropdownBox**:
 
 ```dart
-
           final _children = ['Naruto', 'Luffy', 'Songoku', 'Mabu'];
           String _child = 'Luffy';
-         ....
-         
+          ....
+```
+
+```dart
           DropdownButton<String>(
             items: _children.map((String value) {
               return DropdownMenuItem<String>(

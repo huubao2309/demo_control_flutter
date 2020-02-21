@@ -175,7 +175,7 @@ child: Row(
 
 ![result load image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/load_image.png)
 
-## 6. Raised Button
+## 6. [Raised Button](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 
 [Source Raised Button](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/raised_button_widgets.dart)
 

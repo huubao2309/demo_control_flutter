@@ -17,12 +17,6 @@
 ![Use_Aligment_Code](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_aligment_container.png)
 
 
-* Use **Aligment**:
-
-![Use_Aligment_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_aligment_image.png)
-![Use_Aligment_Code](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_aligment_container.png)
-
-
 * With Properties:
 
 ![Use_Aligment_property](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_alignment_property.png)
@@ -61,3 +55,49 @@
 ![Text Style](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/normal_text.png)
 
 * Add **Font**:
+
+![Diagram](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/using_font_text.png)
+
+1. **Download Font**:
+        
+    Download at: [Google Fonts](https://fonts.google.com/)
+        
+2. **Import Font at `pubspec.yaml`**:
+        
+![Add Font](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/add_font_folder.png)
+        
+3. **Not Use Font**:
+        
+```javascript
+        child: Text(
+          'Not Use Font DancingScript',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 30,
+            decoration: TextDecoration.underline,
+          ),
+        ),
+```
+        
+![Not use Font](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/not_use_font.png)
+        
+4. **Use Font**:
+        
+```javascript
+               child: Text(
+                  'Not Use Font DancingScript',
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    decoration: TextDecoration.underline,
+                    fontFamily: 'DancingScript',
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+```
+        
+![use Font](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/using_font.png)
+        
+

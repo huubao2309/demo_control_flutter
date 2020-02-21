@@ -5,6 +5,7 @@ import 'carousel_control/infinity_scroll_carousel.dart';
 import 'control_normal/column_widgets.dart';
 import 'control_normal/container_widgets.dart';
 import 'control_normal/image_widgets.dart';
+import 'control_normal/raised_button_widgets.dart';
 import 'control_normal/row_widgets.dart';
 import 'control_normal/text_widgets.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: ImageWidgets(),
+        body: RaisedButtonWidgets(),
       ),
     );
   }

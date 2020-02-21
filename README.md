@@ -40,5 +40,24 @@
 ![Use_Width_Code](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_EdgeInserts_code.png)
 
 
+## 2. [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
 
+[Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/text_widgets.dart)
 
+* Use **Text Style**:
+
+```javascript
+        child: Text(
+          'Container',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 30,
+            decoration: TextDecoration.underline,
+          ),
+        ),
+```
+
+![Text Style](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text/normal_text.png)
+
+* Add **Font**:

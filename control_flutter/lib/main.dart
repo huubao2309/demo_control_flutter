@@ -9,12 +9,11 @@ import 'control_normal/image_widgets.dart';
 import 'control_normal/raised_button_widgets.dart';
 import 'control_normal/row_widgets.dart';
 import 'control_normal/text_widgets.dart';
+import 'control_stateful_normal/textfield_widgets.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  TabController _tabController;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: ShowAlertDialogWidgets(),
+        body: TextFieldControl(),
       ),
     );
   }

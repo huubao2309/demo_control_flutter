@@ -199,6 +199,46 @@ child: Row(
 
 ![Result Button](https://github.com/huubao2309/demo_control_flutter/blob/master/images/raised_button/result_button.png)
 
+## 7. [Alert Dialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+
+[Source Code Alert Dialog](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/alert_dialog_widgets.dart)
+
+* Use **Alert Dialog**:
+
+```javascript
+ void showAlertDialog(BuildContext context) {
+    var alertDialog = AlertDialog(
+      title: Text('Alert', style: TextStyle(color: Colors.red)),
+      content: Text('You clicked button', style: TextStyle(color: Colors.blue)),
+      actions: <Widget>[
+        FlatButton(
+          child: Text('OK', style: TextStyle(color: Colors.black)),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ],
+    );
+    showDialog(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return alertDialog;
+      },
+    );
+  }
+```
+
+* Result use **Alert Dialog**:
+
+![Alert Dialog 1](https://github.com/huubao2309/demo_control_flutter/blob/master/images/alert_dialog/image_dialog_1.png)
+![Alert Dialog 2](https://github.com/huubao2309/demo_control_flutter/blob/master/images/alert_dialog/image_dialog_2.png)
+
+
+
+
+
+
 
 
 

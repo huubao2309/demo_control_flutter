@@ -148,6 +148,33 @@ child: Row(
 
 ![Result_Column_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/column_image.png)
 
+## 5. [Load Image](https://api.flutter.dev/flutter/widgets/Image-class.html)
+
+[Source Code](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/image_widgets.dart)
+
+* - **Source contain image**: File, Assets, Network, Provider, Memory, ...
+* - **Format**: jpg, png, gif()animated), bmp, webP(animated), WBmp, ...
+
+* Add Image and change `pubspec.yaml` file:
+
+![pubspec.yaml](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/image.png)
+
+* Code for load Image:
+
+```javascript
+    return Container(
+      child: Image(
+        image: imageAsset,
+        width: 300.0,
+        height: 300.0,
+      ),
+    );
+```
+
+* Result load image:
+
+![result load image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/load_image.png)
+
 
 
 

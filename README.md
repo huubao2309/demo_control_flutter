@@ -425,6 +425,62 @@ child: Row(
 
 ![Scaffold_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/scaffold/use_scaffold.png)
 
+## 10. [Navigation Page in Flutter](https://flutter.dev/docs/cookbook/navigation/navigation-basics)
+
+[Source Code Navigation Page in Flutter](https://github.com/huubao2309/demo_control_flutter/tree/master/control_flutter/lib/navigation_flutter)
+
+* Use **Navigation Page**:
+
+** At Page [**ListView**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/navigation_listview_widgets.dart):
+
+```dart
+             onTap: () async {
+              var result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailNavigationListview(this.people[position])));
+               ...
+```
+
+** At Page [**DetailNavigationListview**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/detail_navigation_widgets.dart):
+
+```dart
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: Text('Detail ListView'),
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(
+                  context, 'Pop Navigation'); // Send Object => Parent Page
+            }),
+      ),
+      ...
+```
+
+** Receive Object At Page [**ListView**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/navigation_listview_widgets.dart):
+
+```dart
+            onTap: () async {
+              var result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailNavigationListview(this.people[position])));
+               // Receive Object when backing to DetailNavigationListview
+              if (result != null) {
+                print('Result Navigation: $result');
+              }
+            },
+      ...
+```
+
+* Result use **Navigation Page**:
+
+![Navigation Page_Main](https://github.com/huubao2309/demo_control_flutter/blob/master/images/navigation_page/main_screen.png)
+![Navigation Page_Detail](https://github.com/huubao2309/demo_control_flutter/blob/master/images/navigation_page/detail_scrren.png)
+
 
 
 

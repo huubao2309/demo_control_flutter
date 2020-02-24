@@ -12,6 +12,7 @@ import 'control_normal/raised_button_widgets.dart';
 import 'control_normal/row_widgets.dart';
 import 'control_normal/scaffold_control_widgets.dart';
 import 'control_normal/text_widgets.dart';
+import 'control_normal/theme_and_colors.dart';
 import 'control_stateful_normal/textfield_widgets.dart';
 import 'control_stateful_normal/dropdown_button_widgets.dart';
 import 'control_stateful_normal/listview_widgets.dart';
@@ -19,7 +20,7 @@ import 'demo_fuel_cost/calc_trip.dart';
 import 'gestures_flutter/demo_gestures.dart';
 import 'navigation_flutter/navigation_listview_widgets.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(ThemeAndColor());
 
 class MyApp extends StatelessWidget {
   @override

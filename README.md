@@ -431,7 +431,7 @@ child: Row(
 
 * Use **Navigation Page**:
 
-** At Page [**ListView**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/navigation_listview_widgets.dart):
+=> At Page [**ListView**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/navigation_listview_widgets.dart):
 
 ```dart
              onTap: () async {
@@ -443,7 +443,7 @@ child: Row(
                ...
 ```
 
-** At Page [**DetailNavigationListview**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/detail_navigation_widgets.dart):
+=> At Page [**DetailNavigationListview**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/detail_navigation_widgets.dart):
 
 ```dart
       appBar: AppBar(
@@ -459,7 +459,7 @@ child: Row(
       ...
 ```
 
-** Receive Object At Page [**ListView**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/navigation_listview_widgets.dart):
+=> Receive Object At Page [**ListView**](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/navigation_flutter/navigation_listview_widgets.dart):
 
 ```dart
             onTap: () async {

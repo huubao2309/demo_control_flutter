@@ -15,6 +15,7 @@ import 'control_stateful_normal/textfield_widgets.dart';
 import 'control_stateful_normal/dropdown_button_widgets.dart';
 import 'control_stateful_normal/listview_widgets.dart';
 import 'demo_fuel_cost/calc_trip.dart';
+import 'gestures_flutter/demo_gestures.dart';
 import 'navigation_flutter/navigation_listview_widgets.dart';
 
 void main() => runApp(MyApp());
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: NavigationListViewControls(),
+        body: GestureDemo(),
       ),
     );
   }

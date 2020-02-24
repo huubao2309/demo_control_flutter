@@ -1,12 +1,16 @@
 import 'package:control_flutter/navigation_flutter/person_model.dart';
 import 'package:flutter/material.dart';
 
-class ListViewControls extends StatefulWidget {
+import 'detail_navigation_widgets.dart';
+
+class NavigationListViewControls extends StatefulWidget {
   @override
-  _ListViewControlsState createState() => _ListViewControlsState();
+  _NavigationListViewControlsState createState() =>
+      _NavigationListViewControlsState();
 }
 
-class _ListViewControlsState extends State<ListViewControls> {
+class _NavigationListViewControlsState
+    extends State<NavigationListViewControls> {
   List<Person> people = List<Person>();
   int count = 15;
 
@@ -36,25 +40,25 @@ class _ListViewControlsState extends State<ListViewControls> {
           elevation: 2.0,
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: getColor(position),
+              backgroundColor: Colors.red,
               child: Text(this.people[position].age.toString()),
             ),
             title: Text(this.people[position].name),
             subtitle: Text(this.people[position].job),
-            onTap: () {
-              print('Tap on: $position');
+            onTap: () async {
+              var result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailNavigationListview(this.people[position])));
+
+              if (result != null) {
+                print('Result Navigation: $result');
+              }
             },
           ),
         );
       },
     );
-  }
-
-  Color getColor(int number) {
-    if (number % 2 != 0) {
-      return Colors.red;
-    } else {
-      return Colors.green;
-    }
   }
 }

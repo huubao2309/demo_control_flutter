@@ -17,7 +17,7 @@
 ### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter#13-gesture)
 ### 14. [Padding and Margin](https://github.com/huubao2309/demo_control_flutter#14-padding-and-margin-1)
 ### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter#15-get-size-of-screen-1)
-### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation)
+### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
 
 ==================================================
 
@@ -558,7 +558,7 @@ child: Row(
 
 [Source Code Animation](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/animation_flutter/animation_demo.dart)
 
-* Use **Animation**:
+* Use **Animation** for `Flutter`:
 
 * Create an **AnimationController**:
 ```dart

@@ -14,7 +14,8 @@
 ### 10. [ListView](https://github.com/huubao2309/demo_control_flutter#10-listview-1)
 ### 11. [Scaffold](https://github.com/huubao2309/demo_control_flutter#11-scaffold-1)
 ### 12. [Navigation Page in Flutter](https://github.com/huubao2309/demo_control_flutter#12-navigation-page-in-flutter-1)
-### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter#12-navigation-page-in-flutter-1)
+### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter#13-gesture-1)
+
 
 ==================================================
 

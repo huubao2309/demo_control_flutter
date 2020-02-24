@@ -55,6 +55,14 @@
 ![Use_Width_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_EdgeInserts_image.png)
 ![Use_Width_Code](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_EdgeInserts_code.png)
 
+* Use **EdgeInserts.symmetric()**:
+
+```dart
+     margin: EdgeInsets.symmetric(vertical: 100.0, horizontal: 30.0),
+```
+
+![symmetric](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/edgeinsert_symmetric.png)
+
 * Use **LinearGradient**:
 
 [Source LinearGradient](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/container_widgets.dart)

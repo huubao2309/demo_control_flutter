@@ -14,9 +14,10 @@
 ### 10. [ListView](https://github.com/huubao2309/demo_control_flutter#10-listview-1)
 ### 11. [Scaffold](https://github.com/huubao2309/demo_control_flutter#11-scaffold-1)
 ### 12. [Navigation Page in Flutter](https://github.com/huubao2309/demo_control_flutter#12-navigation-page-in-flutter-1)
-### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#13-gesture-1)
-### 14. [Padding and Margin](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#13-gesture-1)
-### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#13-gesture-1)
+### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter#13-gesture)
+### 14. [Padding and Margin](https://github.com/huubao2309/demo_control_flutter#14-padding-and-margin-1)
+### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter#15-get-size-of-screen-1)
+### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation)
 
 ==================================================
 

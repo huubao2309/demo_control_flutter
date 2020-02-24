@@ -18,7 +18,8 @@
 ### 14. [Padding and Margin](https://github.com/huubao2309/demo_control_flutter#14-padding-and-margin-1)
 ### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter#15-get-size-of-screen-1)
 ### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
-### 17. [Theme And Color](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
+### 17. [Theme And Color](https://github.com/huubao2309/demo_control_flutter#17-theme-and-color-1)
+### 18. [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
 
 ==================================================
 
@@ -632,6 +633,29 @@ Reference: https://www.materialpalette.com/purple/deep-purple
 * Result use **Theme And Color**:
 
 ![Theme And Color](https://github.com/huubao2309/demo_control_flutter/blob/master/images/theme_colors/themem_color.png)
+
+
+## 18. [BoxDecoration](https://api.flutter.dev/flutter/painting/BoxDecoration-class.html)
+
+[BoxDecoration](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/box_decoration_widgets.dart):
+
+* Use **BoxDecoration**:
+
+```dart
+      decoration: BoxDecoration(
+        color: Colors.orange,
+        shape: BoxShape.rectangle,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30.0),
+          bottomRight: Radius.circular(50.0),
+        ),
+      ),
+      .....
+```
+
+* Result use **BoxDecoration**:
+
+![BoxDecoration](https://github.com/huubao2309/demo_control_flutter/blob/master/images/box_decoration/box_decoration.png)
 
 
 

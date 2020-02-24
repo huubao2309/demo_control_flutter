@@ -15,7 +15,8 @@
 ### 11. [Scaffold](https://github.com/huubao2309/demo_control_flutter#11-scaffold-1)
 ### 12. [Navigation Page in Flutter](https://github.com/huubao2309/demo_control_flutter#12-navigation-page-in-flutter-1)
 ### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#13-gesture-1)
-
+### 14. [Padding and Margin](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#13-gesture-1)
+### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#13-gesture-1)
 
 ==================================================
 
@@ -546,5 +547,15 @@ child: Row(
 ![Gesture_image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/gestures/gestures_result.png)
 
 
+## 14. [Padding and Margin](https://api.flutter.dev/flutter/widgets/Padding-class.html)
+
+![Padding and Margin](https://github.com/huubao2309/demo_control_flutter/blob/master/images/margin_padding/margin_padding.png)
+
+## 15. [Get Size of Screen](https://stackoverflow.com/questions/49664059/how-to-get-size-of-screen-in-flutter-app)
+
+```dart
+     width = MediaQuery.of(context).size.width
+     height = MediaQuery.of(context).size.height 
+```
 
 

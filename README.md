@@ -509,34 +509,29 @@ child: Row(
 
 ```dart
       body: GestureDetector(
+        // Click
         onTap: () {
-          setState(() {
-            numTaps++;
-          });
+          ...
         },
+        // Double Click
         onDoubleTap: () {
-          setState(() {
-            numDoubleTaps++;
-          });
+          ...
         },
+        // Long Press
         onLongPress: () {
-          setState(() {
-            numLongPress++;
-          });
+          ...
+        },
+        // Vertical Drag
+        onVerticalDragUpdate: (DragUpdateDetails value) {
+           ...
+        },
+        // Horizontal Drag
+        onHorizontalDragUpdate: (DragUpdateDetails value) {
+           ...
         },
         child: Stack(
           children: <Widget>[
-            Positioned(
-              left: (MediaQuery.of(context).size.width / 4),
-              top: (MediaQuery.of(context).size.height / 4),
-              child: Container(
-                width: 200,
-                height: 200,
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                ),
-              ),
-            )
+            ...
           ],
         ),
       ),
@@ -557,5 +552,47 @@ child: Row(
      width = MediaQuery.of(context).size.width
      height = MediaQuery.of(context).size.height 
 ```
+
+## 16. [Animation](https://flutter.dev/docs/development/ui/animations)
+
+[Source Code Animation](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/animation_flutter/animation_demo.dart)
+
+* Use **Animation**:
+
+* Create an **AnimationController**:
+```dart
+   controller = AnimationController(
+      duration: const Duration(milliseconds: 5000),
+      vsync: this,
+    );
+```
+
+* Create an **Animation**:
+(Demo use [Curved Animation](https://flutter.dev/docs/development/ui/animations/tutorial#curvedanimation))
+```dart
+    animation = CurvedAnimation(
+      parent: controller,
+      curve: Curves.easeInOut,
+    );
+```
+
+* Add a **Listener**:
+```dart
+    animation.addListener(() {
+      setState(() {
+        ...
+      });
+    });
+```
+
+* Start the **Animation**:
+```dart
+   controller.forward();
+```
+
+* Result use **Animation**:
+
+![Animation_image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/animation/animation.gif)
+
 
 

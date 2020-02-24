@@ -1,6 +1,24 @@
 # Widgets in Flutter
 *Documents:* https://api.flutter.dev/flutter/widgets/widgets-library.html
 
+## Menu Widgets:
+### 1. [Container](https://github.com/huubao2309/demo_control_flutter#1-container)
+### 2. [Text](https://github.com/huubao2309/demo_control_flutter#2-text)
+### 3. [Row](https://github.com/huubao2309/demo_control_flutter#3-row)
+### 4. [Column](https://github.com/huubao2309/demo_control_flutter#4-column)
+### 5. [Load Image](https://github.com/huubao2309/demo_control_flutter#5-load-image)
+### 6. [Raised Button](https://github.com/huubao2309/demo_control_flutter#6-raised-button)
+### 7. [Alert Dialog](https://github.com/huubao2309/demo_control_flutter#7-alert-dialog)
+### 8. [Text Field](https://github.com/huubao2309/demo_control_flutter#8-text-field)
+### 9. [DropdownBox](https://github.com/huubao2309/demo_control_flutter#9-dropdownbox)
+### 10. [ListView](https://github.com/huubao2309/demo_control_flutter#10-listview)
+### 11. [Scaffold](https://github.com/huubao2309/demo_control_flutter#11-scaffold)
+### 12. [Navigation Page in Flutter](https://github.com/huubao2309/demo_control_flutter#12-navigation-page-in-flutter)
+### 13. [Gestures](https://github.com/huubao2309/demo_control_flutter#12-navigation-page-in-flutter)
+
+==================================================
+
+
 ## 1. [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
 
 [Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/container_widgets.dart)

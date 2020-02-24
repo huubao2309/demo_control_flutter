@@ -7,17 +7,18 @@ class ListViewControls extends StatefulWidget {
 
 class _ListViewControlsState extends State<ListViewControls> {
   List<Person> people = List<Person>();
-  int count = 5;
+  int count = 15;
 
   @override
   void initState() {
     super.initState();
     // init list person
+
     for (var i = 0; i < count; i++) {
-      var person = Person()
-        ..name = 'Test $i'
-        ..age = i
-        ..job = 'IT $i';
+      var person = Person();
+      person.name = 'Test $i';
+      person.age = i;
+      person.job = 'IT $i';
 
       people.add(person);
     }
@@ -47,6 +48,14 @@ class _ListViewControlsState extends State<ListViewControls> {
       },
     );
   }
+
+  Color getColor(int number) {
+    if (number % 2 != 0) {
+      return Colors.red;
+    } else {
+      return Colors.green;
+    }
+  }
 }
 
 class Person {
@@ -59,14 +68,14 @@ class Person {
   String get job => _job;
 
   set name(String value) {
-    value = _name;
+    _name = value;
   }
 
   set age(int value) {
-    value = _age;
+    _age = value;
   }
 
   set job(String value) {
-    value = _job;
+    _job = value;
   }
 }

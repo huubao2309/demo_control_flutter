@@ -8,6 +8,7 @@ import 'control_normal/container_widgets.dart';
 import 'control_normal/image_widgets.dart';
 import 'control_normal/raised_button_widgets.dart';
 import 'control_normal/row_widgets.dart';
+import 'control_normal/scaffold_control_widgets.dart';
 import 'control_normal/text_widgets.dart';
 import 'control_stateful_normal/textfield_widgets.dart';
 import 'control_stateful_normal/dropdown_button_widgets.dart';
@@ -24,18 +25,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Control Flutter',
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 14,
-            ),
-          ),
-        ),
-        body: ListViewControls(),
-      ),
+      // home: Scaffold(
+      //   appBar: AppBar(
+      //     title: Text(
+      //       'Control Flutter',
+      //       style: TextStyle(
+      //         color: Colors.black,
+      //         fontSize: 14,
+      //       ),
+      //     ),
+      //   ),
+      //   body: UseScaffold(),
+      // ),
+      home: UseScaffold(),
     );
   }
 }

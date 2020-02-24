@@ -267,8 +267,41 @@ child: Row(
 ![Text Field 2](https://github.com/huubao2309/demo_control_flutter/blob/master/images/text_field/textfield_resul2.png)
 
 
+## 9. [DropdownBox](https://api.flutter.dev/flutter/material/DropdownButton-class.html)
 
+[Source Code DropdownBox](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_stateful_normal/dropdown_button_widgets.dart)
 
+* Use **DropdownBox**:
+
+```dart
+          final _children = ['Naruto', 'Luffy', 'Songoku', 'Mabu'];
+          String _child = 'Luffy';
+          ....
+```
+
+```dart
+          DropdownButton<String>(
+            items: _children.map((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
+            value: _child, // init dropdown boxs
+            onChanged: (String value) {
+              setState(() {
+                this._child = value;
+                name = value;
+              });
+            },
+          ),
+```
+
+* Result use **DropdownBox**:
+
+![DropdownBox 1](https://github.com/huubao2309/demo_control_flutter/blob/master/images/dropdownbox/init_dropdownbox.png)
+![DropdownBox 2](https://github.com/huubao2309/demo_control_flutter/blob/master/images/dropdownbox/select_dropdownbox.png)
+![DropdownBox 3](https://github.com/huubao2309/demo_control_flutter/blob/master/images/dropdownbox/result_dropdownbox.png)
 
 
 

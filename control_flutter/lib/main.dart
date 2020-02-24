@@ -20,7 +20,7 @@ import 'demo_fuel_cost/calc_trip.dart';
 import 'gestures_flutter/demo_gestures.dart';
 import 'navigation_flutter/navigation_listview_widgets.dart';
 
-void main() => runApp(ThemeAndColor());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: AnimationDemo(),
+        body: ContainerWidgets(),
       ),
     );
   }

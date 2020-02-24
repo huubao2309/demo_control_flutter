@@ -338,4 +338,73 @@ child: Row(
 
 ![ListView_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/list_view/listview_image.png)
 
+## 10. [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)
+
+[Source Code Scaffold](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/scaffold_control_widgets.dart)
+
+* Use **Scaffold**:
+
+```dart
+        class UseScaffold extends StatelessWidget {
+          @override
+          Widget build(BuildContext context) {
+            return MaterialApp(
+              theme: ThemeData(
+                  brightness: Brightness.dark,
+                  primaryColor: Color(0xff512DA8), // AppBar color
+                  accentColor: Color(0xff03A9F4), // Floating button
+                  textTheme: TextTheme(
+                      body1: TextStyle(fontSize: 30, fontStyle: FontStyle.italic))),
+              home: Scaffold(
+                appBar: AppBar(
+                  title: Text('Binding with Flutter'),
+                  actions: <Widget>[
+                    IconButton(
+                      child: Icon(Icons.add),
+                      ...
+                    ),
+                    IconButton(
+                      child: Icon(Icons.add),
+                      ...
+                  ],
+                ),
+                body: Center(
+                  child: Text(
+                    "Use Scaffold!",
+                    style: TextStyle(fontSize: 24, color: Colors.blueAccent),
+                  ),
+                ),
+                floatingActionButton: FloatingActionButton(
+                  child: Icon(Icons.add),
+                  ...
+                ),
+                persistentFooterButtons: <Widget>[
+                  IconButton(
+                    child: Icon(Icons.add),
+                    ...
+                  ),
+                  IconButton(
+                    child: Icon(Icons.add),
+                    ...
+                  ),
+                  IconButton(
+                    child: Icon(Icons.add),
+                    ...
+                  ),
+                ],
+              ),
+            );
+          }
+        }
+
+```
+
+* Result use **Scaffold**:
+
+![Scaffold_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/scaffold/use_scaffold.png)
+
+
+
+
+
 

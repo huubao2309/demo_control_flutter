@@ -499,7 +499,50 @@ child: Row(
 ![Navigation Page_Main](https://github.com/huubao2309/demo_control_flutter/blob/master/images/navigation_page/main_screen.png)
 ![Navigation Page_Detail](https://github.com/huubao2309/demo_control_flutter/blob/master/images/navigation_page/detail_scrren.png)
 
+## 13. [Gesture](https://flutter.dev/docs/development/ui/advanced/gestures)
 
+[Source Code Gesture](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/gestures_flutter/demo_gestures.dart)
+
+* Use **Gesture**:
+
+```dart
+      body: GestureDetector(
+        onTap: () {
+          setState(() {
+            numTaps++;
+          });
+        },
+        onDoubleTap: () {
+          setState(() {
+            numDoubleTaps++;
+          });
+        },
+        onLongPress: () {
+          setState(() {
+            numLongPress++;
+          });
+        },
+        child: Stack(
+          children: <Widget>[
+            Positioned(
+              left: (MediaQuery.of(context).size.width / 4),
+              top: (MediaQuery.of(context).size.height / 4),
+              child: Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+```
+
+* Result use **Gesture**:
+
+![Gesture_image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/gestures/gestures_result.png)
 
 
 

@@ -35,7 +35,7 @@ class _ListViewControlsState extends State<ListViewControls> {
           elevation: 2.0,
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.red,
+              backgroundColor: getColor(position),
               child: Text(this.people[position].age.toString()),
             ),
             title: Text(this.people[position].name),

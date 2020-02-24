@@ -304,4 +304,38 @@ child: Row(
 ![DropdownBox 3](https://github.com/huubao2309/demo_control_flutter/blob/master/images/dropdownbox/result_dropdownbox.png)
 
 
+## 10. [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html)
+
+[Source Code ListView](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_stateful_normal/listview_widgets.dart)
+
+* Use **ListView**:
+
+```dart
+    return ListView.builder(
+      itemCount: count,
+      itemBuilder: (BuildContext context, int position) {
+        // Row
+        return Card(
+          color: Colors.white,
+          elevation: 2.0,
+          child: ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Colors.red,
+              child: Text('Index'),
+            ),
+            title: Text('Title ListView'),
+            subtitle: Text('SubTitle ListView'),
+            onTap: () {
+              print('Tap on: $position');
+            },
+          ),
+        );
+      },
+    );
+```
+
+* Result use **ListView**:
+
+![ListView_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/list_view/listview_image.png)
+
 

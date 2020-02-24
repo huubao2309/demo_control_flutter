@@ -360,7 +360,7 @@ child: Row(
 
 ![ListView_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/list_view/listview_image.png)
 
-## 10. [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)
+## 11. [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)
 
 [Source Code Scaffold](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/scaffold_control_widgets.dart)
 
@@ -425,7 +425,7 @@ child: Row(
 
 ![Scaffold_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/scaffold/use_scaffold.png)
 
-## 10. [Navigation Page in Flutter](https://flutter.dev/docs/cookbook/navigation/navigation-basics)
+## 12. [Navigation Page in Flutter](https://flutter.dev/docs/cookbook/navigation/navigation-basics)
 
 [Source Code Navigation Page in Flutter](https://github.com/huubao2309/demo_control_flutter/tree/master/control_flutter/lib/navigation_flutter)
 

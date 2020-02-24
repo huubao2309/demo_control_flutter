@@ -35,6 +35,8 @@
 
 * Use **LinearGradient**:
 
+[Source LinearGradient](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/container_widgets.dart)
+
 ```dart
      child: Container(
         margin: EdgeInsets.all(15),

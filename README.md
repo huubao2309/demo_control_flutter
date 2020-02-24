@@ -33,6 +33,26 @@
 ![Use_Width_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_EdgeInserts_image.png)
 ![Use_Width_Code](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_EdgeInserts_code.png)
 
+* Use **LinearGradient**:
+
+```dart
+     child: Container(
+        margin: EdgeInsets.all(15),
+        width: 200.0,
+        height: 200.0,
+        decoration: BoxDecoration(
+            color: Colors.orange,
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Colors.purple[100], Colors.purple[500]]),
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.all(Radius.circular(50.0))),
+      ),
+```
+
+![Use_Width_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/container/use_linear_gradient.png)
+
 
 ## 2. [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
 

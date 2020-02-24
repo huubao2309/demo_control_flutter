@@ -18,6 +18,7 @@
 ### 14. [Padding and Margin](https://github.com/huubao2309/demo_control_flutter#14-padding-and-margin-1)
 ### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter#15-get-size-of-screen-1)
 ### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
+### 17. [Theme And Color](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
 
 ==================================================
 
@@ -594,6 +595,36 @@ child: Row(
 * Result use **Animation**:
 
 ![Animation_image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/animation/animation.gif)
+
+## 17. [Theme And Color](https://flutter.dev/docs/cookbook/design/themes)
+
+[Source demo Theme and Color](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/theme_and_colors.dart):
+
+Reference: https://www.materialpalette.com/purple/deep-purple
+
+* Use **Theme And Color**:
+
+```dart
+     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Color(0xff009688), // Color Hexa (0xff......)
+        accentColor: Colors.orange, // MaterialColor
+        textTheme: TextTheme(
+          body1: TextStyle(
+            fontSize: 20,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+      ),
+      home: Scaffold()
+      .....
+```
+
+* Result use **Theme And Color**:
+
+![Theme And Color](https://github.com/huubao2309/demo_control_flutter/blob/master/images/theme_colors/themem_color.png)
+
 
 
 

@@ -199,6 +199,15 @@ child: Row(
 
 ![Result_Row_Aligment_Other](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/spcaceEvenly_row.png)
 
+* Use [`direction`](https://api.flutter.dev/flutter/painting/AxisDirection-class.html) properties:
+
+```dart
+          verticalDirection: VerticalDirection.up,
+          textDirection: TextDirection.rtl,
+```
+
+![Result_Row_Direction](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/row_direction.png)
+
 
 ## 4. [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
 
@@ -247,6 +256,14 @@ child: Row(
 
 ![Result_Column_Aligment_Other](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/column_spaceAround.png)
 
+* Use [`direction`](https://api.flutter.dev/flutter/painting/AxisDirection-class.html) properties:
+
+```dart
+          verticalDirection: VerticalDirection.up,
+          textDirection: TextDirection.rtl,
+```
+
+![Result_Column_Direction](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/direction_column.png)
 
 ## 5. [Load Image](https://api.flutter.dev/flutter/widgets/Image-class.html)
 

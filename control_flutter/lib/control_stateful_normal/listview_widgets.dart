@@ -41,6 +41,7 @@ class _ListViewControlsState extends State<ListViewControls> {
             ),
             title: Text(this.people[position].name),
             subtitle: Text(this.people[position].job),
+            trailing: Icon(Icons.arrow_right),
             onTap: () {
               print('Tap on: $position');
             },

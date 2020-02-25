@@ -23,7 +23,7 @@
 ### 19. [Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
 ### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#20-stack-1)
 ### 21. [GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#21-gridview-1)
-### 22. [BottomNavigationBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#21-bottomnavigationbar-1)
+### 22. [BottomNavigationBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#22-bottomnavigationbar-1)
 
 ==================================================
 
@@ -859,7 +859,7 @@ return Container(
 ![GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/images/gridview_layout/grdview_layout.png)
 
 
-## 21. [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
+## 22. [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
 
 [BottomNavigationBar_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/bottom_navigation_bar/bottom_navigation_bar.dart):
 
@@ -872,6 +872,7 @@ return Container(
         ...
       ),
       bottomNavigationBar: BottomNavigationBar(
+        // 3 - 5 items
         items: [
           BottomNavigationBarItem(
             title: ...,

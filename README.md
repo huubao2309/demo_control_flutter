@@ -19,7 +19,7 @@
 ### 15. [Get Size of Screen](https://github.com/huubao2309/demo_control_flutter#15-get-size-of-screen-1)
 ### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
 ### 17. [Theme And Color](https://github.com/huubao2309/demo_control_flutter#17-theme-and-color-1)
-### 18. [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
+### 18. [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1)
 
 ==================================================
 
@@ -215,6 +215,7 @@ child: Row(
 * Code for load Image:
 
 ```dart
+    AssetImage imageAsset = AssetImage('images/flutter.jpeg');
     return Container(
       child: Image(
         image: imageAsset,
@@ -227,6 +228,62 @@ child: Row(
 * Result load image:
 
 ![result load image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/load_image.png)
+
+* Load Flutter Logo + [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1):
+
+[Source code](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/boxdecoration_flutter_logo.dart)
+
+```dart
+     return Container(
+           margin: EdgeInsets.all(50.0),
+           width: 300.0,
+           height: 300.0,
+           child: FlutterLogo(),
+           decoration: BoxDecoration(
+             color: Colors.orange,
+             gradient: LinearGradient(
+               colors: [Colors.pink[50], Colors.pink[500]],
+             ),
+             shape: BoxShape.rectangle,
+             borderRadius: BorderRadius.all(
+               Radius.circular(50.0),
+             ),
+           ),
+         );
+```
+
+![result load logo_flutter](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/image_flutter_logo.png)
+
+* Load Image Network + [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1):
+
+[Source code](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/boxdecoration_image.dart)
+
+```dart
+     return Container(
+           margin: EdgeInsets.all(50.0),
+           width: 300.0,
+           height: 300.0,
+           decoration: BoxDecoration(
+             color: Colors.orange,
+             gradient: LinearGradient(
+               colors: [Colors.pink[50], Colors.pink[500]],
+             ),
+             image: DecorationImage(
+               image: NetworkImage(
+                   'https://academind.com/static/82471063091d8dd5c25baba64914d893/c1b63/flutter.png'),
+             ),
+             shape: BoxShape.rectangle,
+             borderRadius: BorderRadius.all(
+               Radius.circular(50.0),
+             ),
+           ),
+         );
+```
+
+![result load image_network](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/network_image.png)
+
+* **Note**: Load Image with [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1) should use `.png`.
+
 
 ## 6. [Raised Button](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 

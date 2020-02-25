@@ -22,6 +22,7 @@
 ### 18. [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1)
 ### 19. [Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
 ### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#20-stack-1)
+### 21. [GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#21-gridview-1)
 
 ==================================================
 
@@ -832,6 +833,29 @@ return Container(
 * Result use **Stack**:
 
 ![Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/images/stack_layout/stack_layout.png)
+
+
+## 21. [GridView](https://flutter.dev/docs/cookbook/lists/grid-lists)
+
+[GridView_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/gridview_layout.dart):
+
+* Use **Stack**:
+
+```dart
+     child: GridView.count(
+        scrollDirection: Axis.vertical,
+        crossAxisCount: 3, // 3 column
+        children: createSquares(50),
+        mainAxisSpacing: 5.0, // Spacing Row
+        crossAxisSpacing: 5.0, // Spacing Column
+        padding: EdgeInsets.all(5.0),
+      ),
+      .....
+```
+
+* Result use **GridView**:
+
+![GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/images/gridview_layout/grdview_layout.png)
 
 
 

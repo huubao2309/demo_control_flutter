@@ -20,7 +20,8 @@
 ### 16. [Animation](https://github.com/huubao2309/demo_control_flutter#16-animation-1)
 ### 17. [Theme And Color](https://github.com/huubao2309/demo_control_flutter#17-theme-and-color-1)
 ### 18. [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1)
-### 19. [Flex](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1)
+### 19. [Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
+### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
 
 ==================================================
 
@@ -794,7 +795,7 @@ Reference: https://www.materialpalette.com/purple/deep-purple
 
 ## 19. [Flex](https://api.flutter.dev/flutter/widgets/Flex-class.html)
 
-[Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/flex_using_layout.dart):
+[Flex_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/flex_using_layout.dart):
 
 * Use **Flex**:
 
@@ -809,4 +810,26 @@ Reference: https://www.materialpalette.com/purple/deep-purple
 
 ![Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/images/flex_layout/result_flex_layout.png)
 ![Flex_layout](https://github.com/huubao2309/demo_control_flutter/blob/master/images/flex_layout/flex_layout.png)
+
+
+## 20. [Stack](https://api.flutter.dev/flutter/widgets/Stack-class.html)
+
+[Stack_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/stack_layout.dart):
+
+* Use **Stack**:
+
+```dart
+return Container(
+      child: Stack(
+        children: ...,
+      ),
+    );
+      .....
+```
+
+* Result use **Stack**:
+
+![Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/images/stack_layout/stack_layout.png)
+
+
 

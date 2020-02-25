@@ -284,6 +284,18 @@ child: Row(
 
 * **Note**: Load Image with [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1) should use `.png`.
 
+* Use `fit` properties:
+
+```dart
+       image: DecorationImage(
+          image: NetworkImage(
+              'https://academind.com/static/82471063091d8dd5c25baba64914d893/c1b63/flutter.png'),
+          fit: BoxFit.fill,
+        ),
+```
+
+![use fit property](https://github.com/huubao2309/demo_control_flutter/blob/master/images/images/use_fit_image.png)
+
 
 ## 6. [Raised Button](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 

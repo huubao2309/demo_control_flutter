@@ -14,18 +14,6 @@ class StackLayoutWidgets extends StatelessWidget {
     );
   }
 
-  List<Widget> showPizzaLayout(double sizeX, double sizeY) {
-    Container backGround = Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(
-              'https://academind.com/static/82471063091d8dd5c25baba64914d893/c1b63/flutter.png'),
-          fit: BoxFit.fitHeight,
-        ),
-      ),
-    );
-  }
-
   List<Widget> createSquares(int numSquares) {
     int i = 0;
     List colors = [

@@ -16,6 +16,7 @@ class BoxDecorationImage extends StatelessWidget {
         image: DecorationImage(
           image: NetworkImage(
               'https://academind.com/static/82471063091d8dd5c25baba64914d893/c1b63/flutter.png'),
+          fit: BoxFit.fill,
         ),
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.all(

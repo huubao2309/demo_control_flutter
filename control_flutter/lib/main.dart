@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: BoxDecorationFlutterLogo(),
+        body: BoxDecorationImage(),
       ),
     );
   }

@@ -1,6 +1,8 @@
+import 'package:control_flutter/bottom_navigation_bar/model_page.dart';
 import 'package:flutter/material.dart';
 
 import 'animation_flutter/animation_demo.dart';
+import 'bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'carousel_control/indicator_with_carousel.dart';
 import 'carousel_control/infinity_scroll_carousel.dart';
 import 'control_normal/alert_dialog_widgets.dart';
@@ -28,7 +30,7 @@ import 'demo_fuel_cost/calc_trip.dart';
 import 'gestures_flutter/demo_gestures.dart';
 import 'navigation_flutter/navigation_listview_widgets.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyBottomNavigationApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -50,6 +52,22 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: GridViewWidgets(),
+      ),
+    );
+  }
+}
+
+class MyBottomNavigationApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Navigating art',
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,
+      ),
+      home: BottomNavigationBarWidgets(
+        language: ModelPage.IMG_FLUTTER,
       ),
     );
   }

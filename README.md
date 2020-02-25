@@ -23,6 +23,7 @@
 ### 19. [Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
 ### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#20-stack-1)
 ### 21. [GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#21-gridview-1)
+### 22. [BottomNavigationBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#22-bottomnavigationbar-1)
 
 ==================================================
 
@@ -856,6 +857,50 @@ return Container(
 * Result use **GridView**:
 
 ![GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/images/gridview_layout/grdview_layout.png)
+
+
+## 22. [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
+
+[BottomNavigationBar_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/bottom_navigation_bar/bottom_navigation_bar.dart):
+
+* Use **BottomNavigationBar**:
+
+```dart
+    return Scaffold(
+      appBar: AppBar(...),
+      body: Container(
+        ...
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        // 3 - 5 items
+        items: [
+          BottomNavigationBarItem(
+            title: ...,
+            icon: ...,
+          ),
+          BottomNavigationBarItem(
+            title: ...,
+            icon: ...,
+          ),
+          BottomNavigationBarItem(
+            title: ...,
+            icon: ...,
+          ),
+        ],
+        onTap: (value) {
+          // Change Route Page
+        },
+      ),
+    );
+      .....
+```
+
+* Result use **BottomNavigationBar**:
+
+![BottomNavigationBar_Main](https://github.com/huubao2309/demo_control_flutter/blob/master/images/bottom_navigation/bottom_navigation_main.png)
+![BottomNavigationBar_Click](https://github.com/huubao2309/demo_control_flutter/blob/master/images/bottom_navigation/clic_icon_changeTab.png)
+![BottomNavigationBar_Back](https://github.com/huubao2309/demo_control_flutter/blob/master/images/bottom_navigation/back_navigation.png)
+
 
 
 

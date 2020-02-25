@@ -1,4 +1,5 @@
 import 'package:control_flutter/bottom_navigation_bar/model_page.dart';
+import 'package:control_flutter/tabbar_widget/tabbar_control.dart';
 import 'package:flutter/material.dart';
 
 import 'animation_flutter/animation_demo.dart';
@@ -30,7 +31,7 @@ import 'demo_fuel_cost/calc_trip.dart';
 import 'gestures_flutter/demo_gestures.dart';
 import 'navigation_flutter/navigation_listview_widgets.dart';
 
-void main() => runApp(MyBottomNavigationApp());
+void main() => runApp(MyTabBarApp());
 
 class MyApp extends StatelessWidget {
   @override

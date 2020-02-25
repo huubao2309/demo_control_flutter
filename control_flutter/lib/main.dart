@@ -7,11 +7,13 @@ import 'control_normal/alert_dialog_widgets.dart';
 import 'control_normal/box_decoration_widgets.dart';
 import 'control_normal/boxdecoration_flutter_logo.dart';
 import 'control_normal/boxdecoration_image.dart';
+import 'control_normal/column_aligment.dart';
 import 'control_normal/column_widgets.dart';
 import 'control_normal/container_use_linearGradient.dart';
 import 'control_normal/container_widgets.dart';
 import 'control_normal/image_widgets.dart';
 import 'control_normal/raised_button_widgets.dart';
+import 'control_normal/row_aligment.dart';
 import 'control_normal/row_widgets.dart';
 import 'control_normal/scaffold_control_widgets.dart';
 import 'control_normal/text_widgets.dart';
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: BoxDecorationImage(),
+        body: ColumnAligmentWidgets(),
       ),
     );
   }

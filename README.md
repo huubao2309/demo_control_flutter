@@ -176,6 +176,29 @@ child: Row(
 
 ![Result_Row_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/row_image.png)
 
+* Use [**Aligment**](https://api.flutter.dev/flutter/rendering/MainAxisAlignment-class.html):
+
+[Source Code](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/row_aligment.dart)
+
+```dart
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start, // Horizontal
+          crossAxisAlignment: CrossAxisAlignment.end, // Vertical
+          children: ...,
+        ),
+```
+
+![Result_Row_Aligment](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/aligment_row.png)
+
+* Or Use other [**Aligment**](https://api.flutter.dev/flutter/rendering/MainAxisAlignment-class.html) properties:
+
+```dart
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+```
+
+![Result_Row_Aligment_Other](https://github.com/huubao2309/demo_control_flutter/blob/master/images/row/spcaceEvenly_row.png)
+
 
 ## 4. [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
 
@@ -200,6 +223,30 @@ child: Row(
 ```
 
 ![Result_Column_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/column_image.png)
+
+* Use [**Aligment**](https://api.flutter.dev/flutter/rendering/MainAxisAlignment-class.html):
+
+[Source Code](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/column_aligment.dart)
+
+```dart
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start, // Horizontal
+          crossAxisAlignment: CrossAxisAlignment.end, // Vertical
+          children: ...,
+        ),
+```
+
+![Result_Column_Aligment](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/aligment_column.png)
+
+* Or Use other [**Aligment**](https://api.flutter.dev/flutter/rendering/MainAxisAlignment-class.html) properties:
+
+```dart
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+```
+
+![Result_Column_Aligment_Other](https://github.com/huubao2309/demo_control_flutter/blob/master/images/column/column_spaceAround.png)
+
 
 ## 5. [Load Image](https://api.flutter.dev/flutter/widgets/Image-class.html)
 

@@ -508,11 +508,12 @@ child: Row(
           elevation: 2.0,
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.red,
-              child: Text('Index'),
+              backgroundColor: getColor(position),
+              child: Text(this.people[position].age.toString()),
             ),
-            title: Text('Title ListView'),
-            subtitle: Text('SubTitle ListView'),
+            title: Text(this.people[position].name),
+            subtitle: Text(this.people[position].job),
+            trailing: Icon(Icons.arrow_right),
             onTap: () {
               print('Tap on: $position');
             },
@@ -524,7 +525,8 @@ child: Row(
 
 * Result use **ListView**:
 
-![ListView_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/list_view/listview_image.png)
+![ListView_Image](https://github.com/huubao2309/demo_control_flutter/blob/master/images/list_view/listview_result.png)
+
 
 ## 11. [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)
 

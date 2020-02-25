@@ -12,6 +12,7 @@ import 'control_normal/column_widgets.dart';
 import 'control_normal/container_use_linearGradient.dart';
 import 'control_normal/container_widgets.dart';
 import 'control_normal/flex_using_layout.dart';
+import 'control_normal/gridview_layout.dart';
 import 'control_normal/image_widgets.dart';
 import 'control_normal/raised_button_widgets.dart';
 import 'control_normal/row_aligment.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: ListViewControls(),
+        body: GridViewWidgets(),
       ),
     );
   }

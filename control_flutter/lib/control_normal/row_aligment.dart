@@ -10,6 +10,8 @@ class RowAligmentWidgets extends StatelessWidget {
         width: sizeX,
         height: sizeY,
         child: Row(
+          verticalDirection: VerticalDirection.up,
+          textDirection: TextDirection.rtl,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.start, // Horizontal

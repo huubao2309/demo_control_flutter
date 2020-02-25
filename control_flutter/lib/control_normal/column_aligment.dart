@@ -10,6 +10,8 @@ class ColumnAligmentWidgets extends StatelessWidget {
         width: sizeX,
         height: sizeY,
         child: Column(
+          verticalDirection: VerticalDirection.up,
+          textDirection: TextDirection.rtl,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           // mainAxisAlignment: MainAxisAlignment.start, // Horizontal

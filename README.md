@@ -24,6 +24,7 @@
 ### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#20-stack-1)
 ### 21. [GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#21-gridview-1)
 ### 22. [BottomNavigationBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#22-bottomnavigationbar-1)
+### 23. [TabBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#23-tabbar-1)
 
 ==================================================
 
@@ -840,7 +841,7 @@ return Container(
 
 [GridView_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/control_normal/gridview_layout.dart):
 
-* Use **Stack**:
+* Use **GridView**:
 
 ```dart
      child: GridView.count(
@@ -900,6 +901,58 @@ return Container(
 ![BottomNavigationBar_Main](https://github.com/huubao2309/demo_control_flutter/blob/master/images/bottom_navigation/bottom_navigation_main.png)
 ![BottomNavigationBar_Click](https://github.com/huubao2309/demo_control_flutter/blob/master/images/bottom_navigation/clic_icon_changeTab.png)
 ![BottomNavigationBar_Back](https://github.com/huubao2309/demo_control_flutter/blob/master/images/bottom_navigation/back_navigation.png)
+
+
+## 23. [TabBar](https://api.flutter.dev/flutter/material/TabBar-class.html)
+
+[TabBar_Source](https://github.com/huubao2309/demo_control_flutter/blob/master/control_flutter/lib/tabbar_widget/tabbar_control.dart):
+
+* Use **TabBar**:
+
+     - TabBarController
+     - TabBar
+     - TabBarView
+
+```dart
+  return MaterialApp(
+      title: 'Navigating art',
+      theme: ThemeData(...),
+      home: DefaultTabController(
+        length: 3, // 3 items
+        child: Scaffold(
+          appBar: AppBar(
+            title: ...,
+            bottom: TabBar( // 3 tabs
+              tabs: <Widget>[
+                Tab(icon: Icon(Icons.home), text: ModelPage.FLUTTER),
+                Tab(icon: Icon(Icons.phone), text: ModelPage.GOLANG),
+                Tab(icon: Icon(Icons.mail), text: ModelPage.POSTGRES),
+              ],
+            ),
+          ),
+          body: TabBarView( // 3 children
+            children: <Widget>[
+              Container(
+                ...
+              ),
+              Container(
+                ...
+              ),
+              Container(
+                ...
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+      .....
+```
+
+* Result use **TabBar**:
+
+![TabBar_main](https://github.com/huubao2309/demo_control_flutter/blob/master/images/tabbar/tabbar_main.png)
+![TabBar_golang](https://github.com/huubao2309/demo_control_flutter/blob/master/images/tabbar/tabbar_golang.png)
 
 
 

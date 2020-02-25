@@ -21,7 +21,7 @@
 ### 17. [Theme And Color](https://github.com/huubao2309/demo_control_flutter#17-theme-and-color-1)
 ### 18. [BoxDecoration](https://github.com/huubao2309/demo_control_flutter#18-boxdecoration-1)
 ### 19. [Flex](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
-### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#19-flex-1)
+### 20. [Stack](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#20-stack-1)
 
 ==================================================
 

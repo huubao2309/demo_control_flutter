@@ -1,20 +1,23 @@
-import 'package:control_flutter/animation_flutter/hero_animation/util.dart';
+import 'package:control_flutter/animation_flutter/linear_hero_animation/util.dart';
 import 'package:flutter/material.dart';
 
-import 'detail_hero_animation.dart';
+import 'detail_radial_hero_animation.dart';
 
-class HeroAnimationDemo extends StatefulWidget {
+class RadialHeroAnimationDemo extends StatefulWidget {
   @override
-  _HeroAnimationDemoPageState createState() => _HeroAnimationDemoPageState();
+  _RadialHeroAnimationDemoPageState createState() =>
+      _RadialHeroAnimationDemoPageState();
 }
 
-class _HeroAnimationDemoPageState extends State<HeroAnimationDemo>
+class _RadialHeroAnimationDemoPageState extends State<RadialHeroAnimationDemo>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
+    final double maxRadius = MediaQuery.of(context).size.width;
+    final double minRadius = 80.0;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Gestures and Animations"),
+        title: Text("Radial Hero Animation Demo"),
       ),
       body: Container(
         padding: EdgeInsets.all(24),
@@ -23,19 +26,22 @@ class _HeroAnimationDemoPageState extends State<HeroAnimationDemo>
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             GestureDetector(
-              child: Util.buildHeroIcon(Util.IMG_FLUTTER, Util.FLUTTER),
+              child: Util.buildHeroRadialIcon(
+                  Util.IMG_FLUTTER, Util.FLUTTER, minRadius, maxRadius),
               onTap: () {
                 changeRoute(context, Util.FLUTTER);
               },
             ),
             GestureDetector(
-              child: Util.buildHeroIcon(Util.IMG_GOLANG, Util.GOLANG),
+              child: Util.buildHeroRadialIcon(
+                  Util.IMG_GOLANG, Util.GOLANG, minRadius, maxRadius),
               onTap: () {
                 changeRoute(context, Util.GOLANG);
               },
             ),
             GestureDetector(
-              child: Util.buildHeroIcon(Util.POSTGRES, Util.POSTGRES),
+              child: Util.buildHeroRadialIcon(
+                  Util.POSTGRES, Util.POSTGRES, minRadius, maxRadius),
               onTap: () {
                 changeRoute(context, Util.POSTGRES);
               },
@@ -53,7 +59,7 @@ class _HeroAnimationDemoPageState extends State<HeroAnimationDemo>
           context,
           MaterialPageRoute(
             builder: (context) =>
-                DetailsHeroAnimation(Util.IMG_FLUTTER, Util.FLUTTER),
+                DetailsRadialHeroAnimation(Util.IMG_FLUTTER, Util.FLUTTER),
           ),
         );
         break;
@@ -62,7 +68,7 @@ class _HeroAnimationDemoPageState extends State<HeroAnimationDemo>
           context,
           MaterialPageRoute(
             builder: (context) =>
-                DetailsHeroAnimation(Util.IMG_GOLANG, Util.GOLANG),
+                DetailsRadialHeroAnimation(Util.IMG_GOLANG, Util.GOLANG),
           ),
         );
         break;
@@ -71,7 +77,7 @@ class _HeroAnimationDemoPageState extends State<HeroAnimationDemo>
           context,
           MaterialPageRoute(
             builder: (context) =>
-                DetailsHeroAnimation(Util.IMG_POSTGRES, Util.POSTGRES),
+                DetailsRadialHeroAnimation(Util.IMG_POSTGRES, Util.POSTGRES),
           ),
         );
         break;
@@ -80,7 +86,7 @@ class _HeroAnimationDemoPageState extends State<HeroAnimationDemo>
           context,
           MaterialPageRoute(
             builder: (context) =>
-                DetailsHeroAnimation(Util.IMG_FLUTTER, Util.FLUTTER),
+                DetailsRadialHeroAnimation(Util.IMG_FLUTTER, Util.FLUTTER),
           ),
         );
         break;

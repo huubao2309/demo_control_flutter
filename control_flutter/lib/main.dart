@@ -2,8 +2,9 @@ import 'package:control_flutter/bottom_navigation_bar/model_page.dart';
 import 'package:control_flutter/tabbar_widget/tabbar_control.dart';
 import 'package:flutter/material.dart';
 
+import 'animation_flutter/linear_hero_animation/hero_animation.dart';
 import 'animation_flutter/animation_demo.dart';
-import 'animation_flutter/hero_animation/hero_animation.dart';
+import 'animation_flutter/radial_hero_animation/radial_hero_demo.dart';
 import 'bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'carousel_control/indicator_with_carousel.dart';
 import 'carousel_control/infinity_scroll_carousel.dart';
@@ -71,7 +72,7 @@ class MyBottomNavigationApp extends StatelessWidget {
       // home: BottomNavigationBarWidgets(
       //   language: ModelPage.IMG_FLUTTER,
       // ),
-      home: HeroAnimationDemo(),
+      home: RadialHeroAnimationDemo(),
     );
   }
 }

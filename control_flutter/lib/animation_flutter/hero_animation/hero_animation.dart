@@ -1,4 +1,4 @@
-import 'package:control_flutter/animation_flutter/util.dart';
+import 'package:control_flutter/animation_flutter/hero_animation/util.dart';
 import 'package:flutter/material.dart';
 
 import 'detail_hero_animation.dart';

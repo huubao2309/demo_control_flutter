@@ -3,7 +3,7 @@ import 'package:control_flutter/tabbar_widget/tabbar_control.dart';
 import 'package:flutter/material.dart';
 
 import 'animation_flutter/animation_demo.dart';
-import 'animation_flutter/hero_animation.dart';
+import 'animation_flutter/hero_animation/hero_animation.dart';
 import 'bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'carousel_control/indicator_with_carousel.dart';
 import 'carousel_control/infinity_scroll_carousel.dart';

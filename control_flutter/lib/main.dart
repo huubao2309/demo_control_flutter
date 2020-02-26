@@ -3,6 +3,7 @@ import 'package:control_flutter/tabbar_widget/tabbar_control.dart';
 import 'package:flutter/material.dart';
 
 import 'animation_flutter/animation_demo.dart';
+import 'animation_flutter/hero_animation.dart';
 import 'bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'carousel_control/indicator_with_carousel.dart';
 import 'carousel_control/infinity_scroll_carousel.dart';
@@ -31,7 +32,7 @@ import 'demo_fuel_cost/calc_trip.dart';
 import 'gestures_flutter/demo_gestures.dart';
 import 'navigation_flutter/navigation_listview_widgets.dart';
 
-void main() => runApp(MyTabBarApp());
+void main() => runApp(MyBottomNavigationApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -67,9 +68,10 @@ class MyBottomNavigationApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: BottomNavigationBarWidgets(
-        language: ModelPage.IMG_FLUTTER,
-      ),
+      // home: BottomNavigationBarWidgets(
+      //   language: ModelPage.IMG_FLUTTER,
+      // ),
+      home: HeroAnimationDemo(),
     );
   }
 }

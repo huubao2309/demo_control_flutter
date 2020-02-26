@@ -25,6 +25,7 @@
 ### 21. [GridView](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#21-gridview-1)
 ### 22. [BottomNavigationBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#22-bottomnavigationbar-1)
 ### 23. [TabBar](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#23-tabbar-1)
+### 24. [Hero Animation](https://github.com/huubao2309/demo_control_flutter/blob/master/README.md#24-hero-animation-1)
 
 ==================================================
 
@@ -955,5 +956,23 @@ return Container(
 ![TabBar_golang](https://github.com/huubao2309/demo_control_flutter/blob/master/images/tabbar/tabbar_golang.png)
 
 
+## 24. [Hero Animation](https://flutter.dev/docs/development/ui/animations/hero-animations)
 
+[Hero Animation_Source](https://github.com/huubao2309/demo_control_flutter/tree/master/control_flutter/lib/animation_flutter/hero_animation):
+
+* Use **Hero Animation**:
+
+```dart
+     return Hero( // Create a Hero Widget
+           tag: tag, // Same String for Origin and destination
+           child: Container( // Widget for transition
+             ...
+           ),
+         );
+      .....
+```
+
+* Result use **Hero Animation**:
+
+![Hero Animation](https://github.com/huubao2309/demo_control_flutter/blob/master/images/hero_animation/hero_animation.gif)
 
